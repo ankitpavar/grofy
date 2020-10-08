@@ -1,0 +1,19 @@
+body{
+    font-family: 'Jost', sans-serif;
+}
+main {
+    min-height: 80vh;
+}
+h3{
+    padding:1rem 0;
+}
+.rating span {
+    margin: 0.1rem;
+
+}
+.product_title{
+    font-weight: 600;
+}
+.product-price{ 
+    font-weight: 600;
+}
