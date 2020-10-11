@@ -4,19 +4,32 @@
   "description": "Online Grocery Store",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ankitpavar/grofy.git"
   },
-  "author": "",
+  "author": "Ankit Pavar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ankitpavar/grofy/issues"
   },
   "homepage": "https://github.com/ankitpavar/grofy#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
   }
 }

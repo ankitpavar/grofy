@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Fresh Apples 6 pcs',
     image: '/images/apples.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '2',
     name: 'Fresh Pomegranate 1kg',
     image: '/images/pomegranate.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '3',
     name: 'Tender Coconut 1 pc',
     image: '/images/tendercoconut.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '4',
     name: 'Tata Iodised Salt 1 kg ',
     image: '/images/tatasalt.jpeg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '5',
     name: 'Aashirvaad Whole Wheat Atta 10 kg',
     image: '/images/atta.jpeg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '6',
     name: 'Amul Pasteurised Butter 500 g (Carton)',
     image: '/images/amulbutter.jpeg',
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '7',
     name: 'Amul Pure Ghee 1 L (Pouch)',
     image: '/images/amulghee.jpg',
     description:
@@ -91,7 +84,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '8',
     name: 'Parle-G Gold Biscuits 1 kg',
     image: '/images/parleg.jpeg',
     description:
@@ -104,4 +96,4 @@ const products = [
     numReviews: 4,
   },
 ];
-export default products;
+module.exports = products;
