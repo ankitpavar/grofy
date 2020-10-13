@@ -6,7 +6,6 @@ import {
   Col,
   ListGroup,
   Image,
-  Form,
   Button,
   Card,
   ListGroupItem,
@@ -33,12 +32,12 @@ const CartPage = ({ match, location, history }) => {
   }, [dispatch, productId, qty]);
 
   const removeFromCartHandler = (id) => {
-      dispatch(removeFromCart(id));
+    dispatch(removeFromCart(id));
   };
 
   const checkoutHandler = () => {
-    history.push('/login?redirect=shipping')
-  }
+    history.push('/login?redirect=shipping');
+  };
 
   return (
     <Row>
