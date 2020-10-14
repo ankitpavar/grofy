@@ -50,7 +50,8 @@ const OrderPage = ({ match, history }) => {
     <Message variant="danger">{error}</Message>
   ) : (
     <>
-      <h1>Order {order._id}</h1>
+      <Message variant="success">Thanks for Placing Order with us. Expect your order within 5 to 7 days.</Message>
+      <h2 className='heading'>Order {order._id}</h2>
       <Row>
         <Col md={8}>
           <ListGroup variant="flush">

@@ -25,3 +25,23 @@ h3{
 .product-price{ 
     font-weight: 600;
 }
+.navbarBg{
+    background-color: #DD4534;
+}
+.heading{
+    color: #DD4534;
+}
+.addtocart{ background-color: #DD4534;}
+.addtocart:hover{ background-color: #c22211}
+.navItem{ 
+    color: #fff
+}
+#username{
+    color: #fff
+}
+#adminmenu{
+    color: #fff
+}
+.logo{ 
+    font-size: 1.5rem;
+}

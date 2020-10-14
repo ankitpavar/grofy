@@ -16,21 +16,27 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
+      <Navbar className="navbarBg" variant="dark" collapseOnSelect expand="lg">
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Grofy.</Navbar.Brand>
+            <Navbar.Brand className="logo">Grofy.</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>Cart
+                  <span className="navItem">
+                    <i className="fas fa-shopping-cart"></i>Cart
+                  </span>
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
-                <NavDropdown title={userInfo.name} id="username">
+                <NavDropdown
+                  
+                  title={userInfo.name}
+                  id="username"
+                >
                   <LinkContainer to="/profile">
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
@@ -41,7 +47,9 @@ const Header = () => {
               ) : (
                 <LinkContainer to="/login">
                   <Nav.Link>
-                    <i className="fas fa-user"></i>Sign In
+                    <span className="navItem">
+                      <i className="fas fa-user"></i>Sign In
+                    </span>
                   </Nav.Link>
                 </LinkContainer>
               )}

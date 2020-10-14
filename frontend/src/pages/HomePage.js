@@ -15,9 +15,11 @@ const HomePage = () => {
     dispatch(listProducts());
   }, [dispatch]);
 
+  
+
   return (
     <>
-      <h1>Top Deals</h1>
+      <h1 className="heading">All Products</h1>
       {loading ? (
         <Loader />
       ) : error ? (

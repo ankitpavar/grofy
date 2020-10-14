@@ -106,7 +106,7 @@ const CartPage = ({ match, location, history }) => {
             <ListGroupItem>
               <Button
                 type="button"
-                className="btn-block"
+                className="btn-block addtocart"
                 disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
               >
